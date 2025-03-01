@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Redirecting to my blog website</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			min-height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+			font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+		}
+		.container {
+			text-align: center;
+			background: white;
+			padding: 2rem;
+			border-radius: 12px;
+			box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+			max-width: 600px;
+			margin: 20px;
+		}
+		h1 {
+			color: #2d3748;
+			margin-bottom: 1rem;
+		}
+		p {
+			color: #4a5568;
+			line-height: 1.6;
+			margin-bottom: 1.5rem;
+		}
+		.loader {
+			width: 50px;
+			height: 50px;
+			border: 5px solid #f3f3f3;
+			border-top: 5px solid #3498db;
+			border-radius: 50%;
+			animation: spin 1s linear infinite;
+			margin: 20px auto;
+		}
+		@keyframes spin {
+			0% { transform: rotate(0deg); }
+			100% { transform: rotate(360deg); }
+		}
+		.tech-stack {
+			display: inline-block;
+			padding: 0.5rem 1rem;
+			background: #edf2f7;
+			border-radius: 20px;
+			margin: 5px;
+			font-size: 0.9rem;
+			color: #4a5568;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Welcome to 'My blog' version 2017</h1>
+		<p>This is a static showcase version of a WordPress-powered my blog website. The original site was developed using WordPress but has been exported as static HTML for demonstration purposes.</p>
+		
+		<div>
+			<span class="tech-stack">WordPress 5.0</span>
+			<span class="tech-stack">PHP 7.4</span>
+			<span class="tech-stack">MySQL 8.0</span>
+			<span class="tech-stack">AJAX</span>
+			<span class="tech-stack">HTML5</span>
+			<span class="tech-stack">CSS3</span>
+			<span class="tech-stack">JavaScript</span>
+			<span class="tech-stack">jQuery</span>
+			<span class="tech-stack">Bootstrap</span>
+			<span class="tech-stack">Responsive Design</span>
+			<span class="tech-stack">SEO</span>
+		</div>
+
+		<div class="loader"></div>
+		
+		<p>You will be redirected to the main site in a few seconds...</p>
+	</div>
+
+	<script>
+		setTimeout(function() {
+			window.location.href = 'localhost/b2w/en/home/index.html';
+		}, 10000);
+	</script>
+</body>
+</html>
+
+
